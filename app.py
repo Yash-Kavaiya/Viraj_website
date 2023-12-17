@@ -5,9 +5,14 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
 @app.route('/about-us')
-def index():
+def about():
     return render_template('company.html')
+@app.route('/viraj')
+def viraj():
+    return render_template('vermora.html')
+    
 
 
 if __name__ == '__main__':
